@@ -27,7 +27,7 @@
 
 import React from "react";
 
-const APPS_SCRIPT_URL = "YOUR_APPS_SCRIPT_URL_HERE";
+const APPS_SCRIPT_URL = import.meta.env.VITE_NEWSLETTER_SCRIPT_URL || "";
 
 const COUNTRY_CODES = [
   { code: "+91", country: "India" },

@@ -9,7 +9,7 @@ Production-ready newsletter subscription page (React + Tailwind). Subscribe with
 ## Setup
 
 1. **Apps Script**: Create a Google Apps Script project bound to a Sheet, deploy as Web App (Execute as: Me, Anyone). Implement `doPost()` for `action: "subscribe"` and `action: "unsubscribe"`.
-2. **Env**: In `src/NewsletterPage.jsx`, set `APPS_SCRIPT_URL` to your deployment URL.
+2. **Env**: Copy `.env.example` to `.env` and set `VITE_NEWSLETTER_SCRIPT_URL` (same var as portfolio; use the same URL if sharing the sheet).
 3. **Run**: `npm install && npm run dev`
 
 ## Script
