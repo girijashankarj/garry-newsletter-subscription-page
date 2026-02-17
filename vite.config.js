@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_PAGES === 'true' ? '/garry-newsletter-subscription-page/' : '/',
+  // Must match GitHub Pages URL: https://<user>.github.io/<repo>/
+  base: process.env.GITHUB_PAGES === 'true' ? '/newsletter-subscription-page/' : '/',
   plugins: [react(), tailwindcss()],
 })
